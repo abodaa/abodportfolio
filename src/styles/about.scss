@@ -1,0 +1,119 @@
+@import "./reset";
+@import "./variables";
+
+.about-page-container {
+  padding-top: 12rem;
+  padding-left: 5rem;
+}
+.about-header {
+  color: $all-primary-text-color;
+  font-size: 6rem;
+  font-weight: map-get($font-weights, bold);
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+  animation: aboutHeader;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+.about-header-devider {
+  border-bottom: 2px solid $dark-buttons-color;
+  width: 20rem;
+  animation: aboutDevider;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+.about-description-image {
+  @include flex(row, center, center);
+  gap: 2rem;
+  img {
+    animation: aboutDescription;
+    animation-duration: 2s;
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+    width: 30rem;
+    align-self: center;
+    // border: 1px solid $all-primary-text-color;
+    border-radius: 2rem;
+    // background-color: $all-bg-color;
+    box-shadow: rgba(0, 0, 0, 0.422) 0px 4px 8px -2px,
+      rgba(0, 0, 0, 0.099) 0px 0px 0px 0px;
+    &:hover {
+      transform: scale(1.02);
+      transition: 1s;
+      box-shadow: rgba(0, 0, 0, 0.959) 0px 4px 8px -2px,
+        rgba(0, 0, 0, 0.099) 0px 0px 0px 1px;
+    }
+  }
+}
+.about-description {
+  font-family: Poppins, Almarai;
+  color: $all-primary-text-color;
+  padding-top: 20px;
+  line-height: 1.5rem;
+  word-spacing: 0.1rem;
+  width: 48rem;
+  animation: aboutDescription;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+}
+.about-bg {
+  font-size: 15rem;
+  position: absolute;
+  top: 9rem;
+  z-index: -1;
+  color: rgba(65, 65, 65, 0.186);
+}
+.about-buttons {
+  @include flex(row, center, flex-start);
+  gap: 2rem;
+}
+
+.about-button-one {
+  text-decoration: none;
+  @include flex(row, center, flex-start);
+  background-color: #0c1618;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  &:hover {
+    background-color: black;
+    transition: 1s;
+    transform: scale(1.05);
+  }
+}
+
+@keyframes aboutHeader {
+  from {
+    margin-left: 40rem;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+@keyframes aboutDevider {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    width: 20rem;
+  }
+}
+@keyframes aboutDescription {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

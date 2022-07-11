@@ -1,0 +1,25 @@
+$all-bg-color: #132226;
+$dark-buttons-color: yellow;
+$dark-secondary-text-color: #bebebd;
+$all-primary-text-color: #ffffff;
+$dark-sidebar-bg-color: #191A19;
+
+$other-colors: white;
+
+
+
+$font-weights: (
+  "bold": 900,
+  "medium": 400,
+  "regular": 200,
+);
+
+@mixin flex($flexDIrection, $alignItems, $justifyContent) {
+  display: flex;
+  flex-direction: $flexDIrection;
+  align-items: $alignItems;
+  justify-content: $justifyContent;
+}
+
+$mobile: 720px;
+$desktop: 1080;
