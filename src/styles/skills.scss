@@ -1,0 +1,368 @@
+@import "./reset";
+@import "./variables";
+
+.skills-page-container {
+  color: $all-primary-text-color;
+  // width: 100%;
+  @include flex(column, flex-start, center);
+
+  @media screen and (max-width: 700px) {
+    margin-top: 7rem;
+    margin-left: 3rem;
+    margin-bottom: 5rem;
+  }
+  @media screen and (min-width: 700px) {
+    margin-top: 12rem;
+    margin-left: 5rem;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 12rem;
+    margin-left: 8rem;
+  }
+
+  @media screen and (min-width: 1400px) {
+    margin-top: 12rem;
+    margin-left: 13rem;
+  }
+}
+.skills-header {
+  color: $all-primary-text-color;
+   font-family: 'Righteous', cursive;
+
+  font-size: 5rem;
+  font-weight: map-get($font-weights, bold);
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  animation: skillsHeader;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  @media (max-width: 700px) {
+    font-size: 1.7rem;
+  }
+  @media (min-width: 700px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 1200px) {
+    font-size: 2.5rem;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 3rem;
+  }
+}
+.skills-header-devider {
+  border-bottom: 2px solid $dark-buttons-color;
+  animation: aboutDevider;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+.skills-bar-experience-box {
+  @include flex(row, center, flex-start);
+  gap: 2rem;
+
+  @media (max-width: 700px) {
+    @include flex(column, flex-start, center);
+  }
+  @media (min-width: 700px) {
+    @include flex(column, flex-start, center);
+  }
+  @media (min-width: 1200px) {
+    @include flex(row, center, center);
+  }
+  @media (min-width: 1400px) {
+    @include flex(row, center, center);
+  }
+}
+
+.skills-description-bar {
+  @include flex(column, flex-start, center);
+  gap: 1rem;
+  color: $all-primary-text-color;
+  @media (max-width: 700px) {
+    gap: 1rem;
+  }
+  @media (min-width: 700px) {
+  }
+  @media (min-width: 1200px) {
+  }
+  @media (min-width: 1400px) {
+  }
+}
+
+.skills-description {
+  color: $dark-secondary-text-color;
+  
+  margin-top: 20px;
+  line-height: 1.5rem;
+  word-spacing: 0.1rem;
+  width: 70%;
+  animation: aboutDescription;
+  animation-duration: 1s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+   a{
+    text-decoration: none;
+    color: $dark-buttons-color;
+  }
+  @media (max-width: 700px) {
+    width: 95%;
+  }
+  @media (min-width: 700px) {
+    width: 90%;
+  }
+  @media (min-width: 1200px) {
+    width: 70%;
+  }
+  @media (min-width: 1400px) {
+    width: 70%;
+  }
+}
+
+.skills-bar-title {
+  color: $all-primary-text-color;
+}
+.skills-bar-container {
+  @include flex(column, flex-start, center);
+  gap: 1rem;
+}
+// .skills-bar-experience-box {
+//   @include flex(row, center, center);
+//   gap: 1rem;
+// }
+.skills-bar {
+  @include flex(column, flex-start, center);
+  gap: 1rem;
+}
+.skills-bar-one {
+  border-bottom: 7px solid $dark-buttons-color;
+  //   width: 20rem;
+  animation: skillsBarOne;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.skills-bar-two {
+  border-bottom: 7px solid rgb(162, 255, 0);
+  //   width: 20rem;
+  animation: skillsBarTwo;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.skills-bar-three {
+  border-bottom: 7px solid $all-primary-text-color;
+  //   width: 20rem;
+  animation: skillsBarThree;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.skills-bar-four {
+  border-bottom: 7px solid rgb(255, 0, 93);
+  //   width: 20rem;
+  animation: skillsBarFour;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.skills-bar-five {
+  border-bottom: 7px solid rgb(79, 1, 249);
+  //   width: 20rem;
+  animation: skillsBarFive;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+.experience-box {
+  @include flex(row, center, center);
+  gap: 1rem;
+  @media (max-width: 700px) {
+    @include flex(column, center, center);
+  }
+  @media (min-width: 700px) {
+    @include flex(row, center, center);
+  }
+  @media (min-width: 1200px) {
+    @include flex(row, center, center);
+  }
+  @media (min-width: 1400px) {
+    @include flex(row, center, center);
+  }
+}
+.experience-one-title {
+  font-size: 1.8rem;
+  font-weight: map-get($font-weights, bold);
+  @media (max-width: 700px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 700px) {
+    font-size: 1.5rem;
+  }
+  @media (min-width: 1200px) {
+  }
+  @media (min-width: 1400px) {
+    font-size: 1.8rem;
+  }
+}
+.skills-experience {
+  background-color: #1d1d42;
+  background-image: linear-gradient(160deg, #1d1d42 0% 0%,#4e2ecf 100%);
+  @include flex(column, flex-start, flex-start);
+
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+  gap: 0.7rem;
+  width: 16rem;
+  height: 15rem;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  animation: aboutDescription;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  &:hover {
+    margin-top: -1rem;
+    transition: 1s;
+    .experience-one-title {
+      color: $dark-buttons-color;
+      transition: 1s;
+    }
+  }
+  @media (max-width: 700px) {
+    gap: 0.7rem;
+    width: 17rem;
+    height: 12rem;
+    padding: 2rem;
+  }
+  @media (min-width: 700px) {
+  }
+  @media (min-width: 1200px) {
+    gap: 0.7rem;
+    width: 17em;
+    padding: 1rem;
+  }
+  @media (min-width: 1400px) {
+    gap: 0.7rem;
+    width: 18rem;
+    padding: 2rem;
+  }
+}
+.experience-one-title{
+  font-family: "Righteous", cursive;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-weight: 100;
+}
+.experience-one-subtitle {
+  // font-family: sans-serif;
+
+  color: $dark-secondary-text-color;
+  // font-weight: map-get($font-weights, regular);
+  font-size: 16px;
+  line-height: 18px;
+}
+.experience-one-description{
+  color: $dark-secondary-text-color;
+  // font-weight: map-get($font-weights, regular);
+  font-size: 16px;
+  line-height: 18px;
+ 
+}
+.skills-bg {
+  font-size: 30rem;
+  position: fixed;
+  left: 0rem;
+  top: 12rem;
+  z-index: -1;
+  color: rgba(65, 65, 65, 0.186);
+  animation: aboutDescription;
+  animation-duration: 3s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  @media screen and (max-width: 700px) {
+    visibility: hidden;
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 18rem;
+    left: 0rem;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 20rem;
+    left: 5rem;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 32rem;
+    left: 0rem;
+  }
+}
+
+@keyframes skillsHeader {
+  from {
+    margin-left: 5rem;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    margin-left: 0;
+  }
+}
+@keyframes aboutDevider {
+  from {
+    width: 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    width: 10rem;
+  }
+}
+@keyframes aboutDescription {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes skillsBarOne {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20rem;
+  }
+}
+@keyframes skillsBarTwo {
+  from {
+    width: 0;
+  }
+  to {
+    width: 19rem;
+  }
+}
+@keyframes skillsBarThree {
+  from {
+    width: 0;
+  }
+  to {
+    width: 18rem;
+  }
+}
+@keyframes skillsBarFour {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17rem;
+  }
+}
+@keyframes skillsBarFive {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20rem;
+  }
+}

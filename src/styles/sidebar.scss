@@ -1,27 +1,90 @@
 @import "./reset";
 @import "./variables";
 
+.sidebar-page-container-main {
+  @include flex(center, center, center);
+  justify-content: space-around;
+  position: fixed;
+  width: 100%;
+  top: 1rem;
+  right: 0;
+  z-index: 3;
+  img {
+    //  margin-left: -10rem;
+    border: 1px solid $all-primary-text-color;
+    border-radius: 20%;
+    background-color: $all-bg-color;
+    padding: 0.5rem;
+    //  box-shadow: 0.5rem 0.8rem 2rem $dark-sidebar-bg-color;
+  }
+
+  @media screen and (max-width: 700px) {
+    background-color: $dark-sidebar-bg-color;
+    padding: 0.8rem;
+    top: 0;
+    justify-content: space-between;
+  }
+  @media screen and (min-width: 700px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1400px) {
+  }
+}
+
 .sidebar-page-container {
   background-color: $dark-sidebar-bg-color;
-  height: 100vh;
+  width: 40rem;
+  height: 5rem;
   color: $all-primary-text-color;
-  @include flex(column, center, space-evenly);
-  gap: 5rem;
+  @include flex(row, center, space-evenly);
+  // gap: 5rem;
   padding: 0rem 1rem;
-  //   border-top-right-radius: 2rem;
-  //   border-bottom-right-radius: 2rem;
-  img {
-    width: 4rem;
-    justify-self: flex-start;
-    position: absolute;
-    top: 0px;
-    background-color: black;
-    padding: 0.65rem;
+  border-radius: 5rem;
+
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
+  @media screen and (min-width: 700px) {
+    width: 30rem;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 40rem;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 40rem;
+  }
+}
+.sidebar-logo {
+  width: 9rem;
+  margin-left: 0rem;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Righteous", cursive;
+  text-align: center;
+
+  color: $dark-buttons-color;
+  border: 1px solid $dark-buttons-color;
+  padding: 0.4rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  text-decoration: none;
+  @media screen and (max-width: 700px) {
+    width: 6rem;
+    margin-left: 3rem;
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 700px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1400px) {
   }
 }
 .sidebar-menu-items {
-  @include flex(column, center, center);
-  margin-top: 0;
+  @include flex(row, center, center);
+  gap: 1.5rem;
+  // margin-top: 0;
 }
 .sidebar-icon {
   font-size: 1.3rem;
@@ -34,39 +97,43 @@
   @include flex(row, center, center);
   gap: 3rem;
   padding: 1rem;
-  border-bottom: 1px solid rgb(40, 40, 40);
+  // border-bottom: 1px solid rgb(40, 40, 40);
   width: 100%;
+  z-index: 1111;
   cursor: pointer;
-  &:hover {
+  &:hover,
+  &:focus,
+  &:active {
     border-bottom: 1px solid $all-primary-text-color;
+    width: 70%;
     color: $dark-buttons-color;
-    transform: scale(1.05);
+    transform: scale(1.09);
     transition: 0.6s;
     .sidebar-icon {
       color: $dark-buttons-color;
     }
   }
 }
-.sidebar-scroll {
-  @include flex(column, center, center);
-  gap: 1.2rem;
-  position: absolute;
-  bottom: 50px;
-  color: $dark-buttons-color;
-  p {
-    transform: rotate(-90deg);
-  }
-  cursor: pointer;
-  &:hover {
-    color: $dark-buttons-color;
-    transform: scale(1.2);
-    transition: 0.6s;
-  }
-  animation-name: scroll;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
+// .sidebar-scroll {
+//   @include flex(column, center, center);
+//   gap: 1.2rem;
+//   position: absolute;
+//   bottom: 50px;
+//   color: $dark-buttons-color;
+//   p {
+//     transform: rotate(-90deg);
+//   }
+//   cursor: pointer;
+//   &:hover {
+//     color: $dark-buttons-color;
+//     transform: scale(1.2);
+//     transition: 0.6s;
+//   }
+//   animation-name: scroll;
+//   animation-duration: 4s;
+//   animation-iteration-count: infinite;
+//   animation-timing-function: ease-in-out;
+// }
 
 .sidebar-night-mode {
   font-size: 1.5rem;
@@ -79,23 +146,118 @@
     transition: 0.6s;
   }
 }
+.resume {
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  font-size: 0.8rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  &:hover {
+    color: $dark-buttons-color;
+    background-color: $all-bg-color;
+    transform: scale(1.02);
+    transition: 1s;
+  }
+}
 
-// ************************************
+// ************* Mobile Menu***********************
+.navvv {
+  z-index: 999999;
+  width: 100%;
+}
+.mobile-menu-icon {
+  z-index: 999;
+  font-size: 1.7rem;
+  color: white;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  // **************Mobile Menu Dropdown**********************
+  @media screen and (max-width: 700px) {
+    margin-right: 0rem;
+  }
+  @media screen and (min-width: 700px) {
+    display: none;
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+  @media screen and (min-width: 1400px) {
+    display: none;
+  }
+}
+.mobile-menu-dropdown-container {
+  position: fixed;
+  @include flex(column, flex-start, flex-start);
+  gap: 2rem;
+  top: 0;
+  right: 0;
+  background-color: #0a192f;
+  border-bottom-left-radius: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
-
-
-// ************************************
-
-
-@keyframes scroll{
-    0%{
-        transform: scale(1);
-        // opacity: 0.5;
+  color: $all-primary-text-color;
+  // opacity: 96%;
+  height: 80vh;
+  // width: 60%;
+  padding: 2rem;
+  z-index: 9;
+  // animation: mobile;
+  // animation-duration: 1s;
+  // animation-fill-mode: forwards;
+  // // animation-timing-function: ease;
+  .mobile-menu-close {
+    font-size: 3rem;
+    align-self: flex-end;
+    transition: 1s;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+  .mobile-menu {
+    font-size: 1.5rem;
+    @include flex(row, center, flex-start);
+    color: $all-primary-text-color;
+    gap: 2rem;
+    padding: 1rem;
+    // border-bottom: 1px solid rgb(0, 0, 0);
+    width: 100%;
+    z-index: 1111;
+    cursor: pointer;
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom: 1px solid $all-primary-text-color;
+      width: 70%;
+      color: $dark-buttons-color;
+      transform: scale(1.09);
+      transition: 0.6s;
     }
-    50%{
-      
-        transform: scale(1.2);
-        // opacity: 1;
-    }
-   
+  }
+}
+.mobile-resume {
+  border: 1px solid white;
+  text-decoration: none;
+  padding: 0.5rem 7rem;
+
+  color: white;
+  font-size: 1rem;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  &:hover {
+    color: $dark-buttons-color;
+    background-color: $all-bg-color;
+    transform: scale(1.02);
+    transition: 1s;
+  }
+}
+@keyframes mobile {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  }
 }

@@ -1,8 +1,21 @@
 import React from "react";
-import style from "../styles/home.scss";
-
+import "../styles/home.scss";
+import Sidebar from "./Sidebar";
 
 export default function Home() {
+  const hour = new Date().getHours();
+
+  const greetings = ["Good Morning", "Good Afternoon", "Good Evening"];
+  let greetingText = "";
+
+  if (hour < 12) {
+    greetingText = greetings[0];
+  } else if (hour < 18) {
+    greetingText = greetings[1];
+  } else {
+    greetingText = greetings[2];
+  }
+
   return (
     <div className="home-container">
       <h1 className="home-bg">HOME</h1>
@@ -16,7 +29,6 @@ export default function Home() {
         </div>
       </div>
 
-      
       <div className="home-self-introduction">
         <p>
           Disciplined and tech enthusiastic person, who is motivated to combine

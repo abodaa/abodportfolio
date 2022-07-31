@@ -1,0 +1,267 @@
+@import "./reset";
+@import "./variables";
+@mixin mobile {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (min-width: 1000px) {
+    @content;
+  }
+}
+@mixin desktop {
+  @media (min-width: 1220px) {
+    @content;
+  }
+}
+.home-original-page-container {
+  color: $all-primary-text-color;
+  // width: 100%;
+  @include flex(column, flex-start, center);
+
+  @media screen and (max-width: 700px) {
+    margin-top: 15rem;
+    margin-left: 3.5rem;
+    margin-bottom: 5rem;
+  }
+  @media screen and (min-width: 700px) {
+    margin-top: 15rem;
+    margin-left: 5rem;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 15rem;
+    margin-left: 8rem;
+  }
+
+  @media screen and (min-width: 1400px) {
+    margin-top: 15rem;
+    margin-left: 13rem;
+  }
+}
+.home-original-bg {
+  position: fixed;
+  top: 9rem;
+  left: 0;
+  font-size: 32rem;
+  // z-index: -1;
+  color: rgba(65, 65, 65, 0.111);
+  z-index: -1;
+  @media screen and (max-width: 700px) {
+    visibility: hidden;
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 18rem;
+    left: 0rem;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 20rem;
+    left: 5rem;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 32rem;
+    left: 0rem;
+  }
+}
+.hero-image{
+  width: 20rem;
+}
+.home-original-container-elements {
+  @include flex(column, flex-start, center);
+  gap: 3rem;
+}
+
+.home-original-intro-greeting {
+  font-size: 3rem;
+  font-weight: map-get($font-weights, bold);
+  color: $dark-secondary-text-color;
+  animation-name: homeGreetings;
+  animation-duration: 4s;
+  //   animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+  @media screen and (max-width: 700px) {
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 1.5rem;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 1.7rem;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 2rem;
+  }
+}
+.home-original-name-intro {
+  // font-size: 9rem;
+  font-family: "Righteous", cursive;
+
+  font-weight: map-get($font-weights, bold);
+  animation-name: homeName;
+  animation-duration: 6s;
+  // animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  // animation-fill-mode: forwards;
+
+  &:hover {
+    // transform: skew(5deg);
+    color: $dark-buttons-color;
+    transition: 2s;
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 4rem;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 4rem;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 6rem;
+  }
+}
+.home-original-profission-intro {
+  // font-size: 4rem;
+  color: $dark-secondary-text-color;
+  font-weight: map-get($font-weights, bold);
+  animation-name: homeGreetings;
+  animation-duration: 4s;
+  //   animation-iteration-count: 2;
+  animation-timing-function: ease-in-out;
+  margin-bottom: 1rem;
+
+  span {
+    color: $dark-buttons-color;
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 1.2rem;
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 2.5rem;
+  }
+}
+.home-original-self-introduction {
+  // @include flex(column, flex-start, center);
+  gap: 1.5rem;
+  font-size: 17px;
+  width: 60%;
+  margin-top: 1rem;
+
+  color: $dark-secondary-text-color;
+  font-weight: map-get($font-weights, regular);
+  // letter-spacing: 1.5px;
+  //  background:linear-gradient(0deg, #0a192f5d, #020c1b48);
+  // padding: 1rem;
+  word-spacing: 3px;
+  line-height: 20px;
+  animation: homeGreetings;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
+  @media screen and (max-width: 700px) {
+    width: 85%;
+    font-size: 15px;
+    // margin-left: 2rem;
+
+    // margin: auto;
+  }
+  @media screen and (min-width: 700px) {
+    width: 80%;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 60%;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 60%;
+  }
+}
+.home-original-buttons {
+  @include flex(row, flex-start, flex-start);
+  margin-top: 2rem;
+  gap: 2rem;
+}
+.home-original-button-one {
+  border: none;
+  background-color: $dark-buttons-color;
+  color: $all-bg-color;
+  font-family: "Righteous", cursive;
+
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  font-weight: map-get($font-weights, bold);
+  border: 1px solid $dark-buttons-color;
+  // font-family: "Poppins", sans-serif;
+  font-weight: map-get($font-weights, regular);
+  border-radius: 0.5rem;
+
+  cursor: pointer;
+  &:hover {
+    background-color: $all-primary-text-color;
+    border: 1px solid $all-primary-text-color;
+    color: darken($all-primary-text-color, 100%);
+    transform: scale(1.08);
+    transition: 0.8s;
+  }
+  @media screen and (max-width: 700px) {
+    padding: 0.5rem 1rem;
+    font-size: 0.7rem;
+  }
+  @media screen and (min-width: 700px) {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+  }
+  @media screen and (min-width: 1400px) {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+.home-original-button-two {
+  @extend .home-original-button-one;
+  color: $all-primary-text-color;
+  color: $dark-buttons-color;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+@keyframes homeGreetings {
+  0% {
+    // transform: none;
+    opacity: 0;
+  }
+  50% {
+    // transform: scale(1.1);
+    opacity: 0.5;
+  }
+  //  75%{
+  //     // transform: scale(1.1);
+  //     opacity: 0.8;
+  // }
+  100% {
+    // transform: scale(1.1);
+    opacity: 1;
+  }
+}
+@keyframes homeName {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+    color: $all-primary-text-color;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 1;
+    color: $dark-buttons-color;
+  }
+}

@@ -21,19 +21,29 @@ time, mark, audio, video {
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline;
+    // vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
+// article, aside, details, figcaption, figure, 
+// footer, header, hgroup, menu, nav, section {
+//     display: block;
+// }
 body {
     line-height: 1;
-    font-family: sans-serif;
+    // max-width: 100%;
+  //  font-family: 'Righteous', cursive;
+   font-family: 'Roboto', sans-serif;
+
     position: relative;
     background-color: $all-bg-color;
-    overflow: hidden;
+    background:linear-gradient(0deg, #0a192f, #020c1bb4), url('../images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow-x: hidden;
+    // max-height: 100%;
+    
     
 }
 ol, ul {
@@ -50,4 +60,24 @@ q:before, q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: $dark-sidebar-bg-color; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $other-colors; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }

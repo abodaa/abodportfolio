@@ -2,96 +2,249 @@
 @import "./variables";
 
 .about-page-container {
-  padding-top: 12rem;
-  padding-left: 5rem;
+  color: $all-primary-text-color;
+  // width: 100%;
+  @include flex(column, flex-start, center);
+
+  @media screen and (max-width: 700px) {
+    margin-top: 7rem;
+    margin-left: 3.5rem;
+    margin-bottom: 5rem;
+  }
+  @media screen and (min-width: 700px) {
+    margin-top: 15rem;
+    margin-left: 5rem;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 15rem;
+    margin-left: 8rem;
+  }
+
+  @media screen and (min-width: 1400px) {
+    margin-top: 15rem;
+    margin-left: 13rem;
+  }
 }
 .about-header {
   color: $all-primary-text-color;
+  font-family: "Righteous", cursive;
+
   font-size: 6rem;
   font-weight: map-get($font-weights, bold);
   text-transform: capitalize;
   padding-bottom: 1rem;
   animation: aboutHeader;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in-out;
+  @media screen and (max-width: 700px) {
+    font-size: 2rem;
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 2.5rem;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 3rem;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 5rem;
+  }
 }
 .about-header-devider {
   border-bottom: 2px solid $dark-buttons-color;
-  width: 20rem;
+  // width: 20rem;
   animation: aboutDevider;
-  animation-duration: 2s;
-  animation-fill-mode: backwards;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
+  @media screen and (max-width: 700px) {
+    width: 6rem;
+    margin-bottom: 2rem;
+  }
+  @media screen and (min-width: 700px) {
+    width: 10rem;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 10rem;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 20rem;
+  }
 }
 .about-description-image {
-  @include flex(row, center, center);
-  gap: 2rem;
+  @include flex(row, flex-start, flex-start);
+  gap: 3rem;
+  @media screen and (max-width: 700px) {
+    @include flex(column-reverse, flex-start, flex-start);
+  }
+  @media screen and (min-width: 700px) {
+    @include flex(row, flex-start, flex-start);
+  }
+  @media screen and (min-width: 1200px) {
+    @include flex(row, flex-start, flex-start);
+  }
+  @media screen and (min-width: 1400px) {
+    @include flex(row, flex-start, flex-start);
+  }
   img {
-    animation: aboutDescription;
-    animation-duration: 2s;
-    animation-fill-mode: backwards;
+    filter: grayscale(5);
+    // border-right: 1px solid $dark-buttons-color;
+    // border-bottom: 1px solid $dark-buttons-color;
+    margin: 0;
+    padding: 0.5rem;
+    animation: aboutimage;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
-    width: 30rem;
     align-self: center;
-    // border: 1px solid $all-primary-text-color;
-    border-radius: 2rem;
-    // background-color: $all-bg-color;
-    box-shadow: rgba(0, 0, 0, 0.422) 0px 4px 8px -2px,
-      rgba(0, 0, 0, 0.099) 0px 0px 0px 0px;
+    border-radius: 40% 60% 73% 28% / 32% 41% 37% 50% ;
     &:hover {
-      transform: scale(1.02);
+      transform: scale(1.5);
       transition: 1s;
-      box-shadow: rgba(0, 0, 0, 0.959) 0px 4px 8px -2px,
-        rgba(0, 0, 0, 0.099) 0px 0px 0px 1px;
+     
+      filter: grayscale(0);
+    }
+    @media screen and (max-width: 700px) {
+      width: 15rem;
+      align-self: center;
+      margin-right: 2.8rem;
+    }
+    @media screen and (min-width: 700px) {
+      width: 12rem;
+      align-self: flex-start;
+    }
+    @media screen and (min-width: 1000px) {
+      width: 16rem;
+      align-self: flex-start;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 18rem;
+    }
+    @media screen and (min-width: 1400px) {
+      width: 22rem;
     }
   }
 }
 .about-description {
-  font-family: Poppins, Almarai;
-  color: $all-primary-text-color;
-  padding-top: 20px;
+  color: $dark-secondary-text-color;
+  margin-top: 20px;
+  margin-bottom: 7rem;
+  font-size: 1rem;
   line-height: 1.5rem;
   word-spacing: 0.1rem;
-  width: 48rem;
+  animation: aboutDescription;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+  em{
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: $dark-buttons-color;
+  }
+  @media screen and (max-width: 700px) {
+    font-size: 0.9rem;
+    width: 95%;
+     margin-bottom: 0rem;
+
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 0.9rem;
+    width: 60%;
+     margin-bottom: 1rem;
+
+  }
+  @media screen and (min-width: 1200px) {
+    width: 60%;
+    font-size: 1rem;
+     margin-bottom: 6rem;
+
+
+  }
+  @media screen and (min-width: 1400px) {
+    width: 58%;
+    font-size: 1rem;
+     margin-bottom: 7rem;
+
+  }
+}
+.about-bg {
+  font-size: 26rem;
+  position: fixed;
+  left: 3rem;
+  top: 9rem;
+  z-index: -1;
+  color: rgba(65, 65, 65, 0.186);
   animation: aboutDescription;
   animation-duration: 2s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in-out;
-}
-.about-bg {
-  font-size: 15rem;
-  position: absolute;
-  top: 9rem;
-  z-index: -1;
-  color: rgba(65, 65, 65, 0.186);
-}
-.about-buttons {
-  @include flex(row, center, flex-start);
-  gap: 2rem;
+  @media screen and (max-width: 700px) {
+    visibility: hidden;
+  }
+  @media screen and (min-width: 700px) {
+    font-size: 18rem;
+    left: 0rem;
+  }
+  @media screen and (min-width: 1000px) {
+    font-size: 20rem;
+    left: 5rem;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 32rem;
+    left: 0rem;
+  }
 }
 
 .about-button-one {
   text-decoration: none;
   @include flex(row, center, flex-start);
-  background-color: #0c1618;
+  background-color: transparent;
+  border: 1px solid $dark-buttons-color;
   color: white;
-  border: none;
+  width: 10rem;
   padding: 1rem 2rem;
   gap: 1rem;
-  border-radius: 2rem;
+  border-radius: 0.5rem;
+  margin-top: 0rem;
+  animation: aboutbutton;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+
+  // position: absolute;
+  // top: 35rem;
   cursor: pointer;
   text-transform: capitalize;
   &:hover {
-    background-color: black;
+    // background-color: black;
+    color: $dark-buttons-color;
     transition: 1s;
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
+  @media screen and (max-width: 700px) {
+    margin-top: 2rem;
+  }
+  @media screen and (min-width: 700px) {
+    margin-top: 2rem;
+  }
+  @media screen and (min-width: 1000px) {
+    margin-top: 0rem;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: -2rem;
+  }
+  @media screen and (min-width: 1400px) {
+    margin-top: -5rem;
+  }
+}
+
+.loader{
+  margin-top: 20%;
 }
 
 @keyframes aboutHeader {
   from {
-    margin-left: 40rem;
+    margin-left: 10rem;
     opacity: 0;
   }
   to {
@@ -111,9 +264,27 @@
 }
 @keyframes aboutDescription {
   from {
-    opacity: 0;
+    opacity: 0.6;
   }
   to {
-    opacity: 1;
+   opacity: 1;
+  }
+}
+@keyframes aboutimage {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes aboutbutton {
+  from {
+    margin-left: 10rem;
+  }
+  to {
+        margin-left: 0rem;
+
   }
 }

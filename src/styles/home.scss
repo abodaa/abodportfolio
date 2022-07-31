@@ -33,9 +33,9 @@
 .home-container {
   @include theme($light-theme: false);
   height: 100vh;
-  width: 100%;
+  // width: 100%;
   position: relative;
-  z-index: 1;
+  // z-index: 1;
 }
 .home-container-elements {
   padding: 14rem 0rem 0rem 5rem;
@@ -49,21 +49,22 @@
   color: $dark-secondary-text-color;
   animation-name: homeGreetings;
   animation-duration: 4s;
-//   animation-iteration-count: 2;
+  //   animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
 }
 .home-name-intro {
   font-size: 9rem;
   font-weight: map-get($font-weights, bold);
   animation-name: homeName;
-  animation-duration: 2s;
-//   animation-iteration-count: 2;
-  animation-timing-function:ease-out;
-  &:hover{
-      // transform: skew(5deg);
-      color: $dark-buttons-color;
-      transition: 2s;
+  animation-duration: 6s;
+  // animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  // animation-fill-mode: forwards;
 
+  &:hover {
+    // transform: skew(5deg);
+    color: $dark-buttons-color;
+    transition: 2s;
   }
 }
 .home-profission-intro {
@@ -72,7 +73,7 @@
   font-weight: map-get($font-weights, bold);
   animation-name: homeGreetings;
   animation-duration: 4s;
-//   animation-iteration-count: 2;
+  //   animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
 }
 .home-buttons {
@@ -90,7 +91,7 @@
   border: 1px solid $dark-buttons-color;
   // font-family: "Poppins", sans-serif;
   font-weight: map-get($font-weights, regular);
-  border-radius: 2rem;
+  border-radius: 0.5rem;
 
   cursor: pointer;
   &:hover {
@@ -104,9 +105,9 @@
 .home-button-two {
   @extend .home-button-one;
   color: $all-primary-text-color;
+  color: $dark-buttons-color;
   background-color: transparent;
 }
-
 
 .home-self-introduction {
   @include flex(column, flex-start, space-between);
@@ -117,7 +118,8 @@
   width: 40rem;
   // height: 8rem;
   // background-color: rgba(0, 0, 0, 0.315);
-  
+   background:linear-gradient(0deg, #0a192f, #020c1b);
+
   padding: 2rem;
   font-family: Poppins, sans-serif;
   color: $dark-secondary-text-color;
@@ -129,56 +131,50 @@
   animation-duration: 2s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in-out;
-  &:hover{
-  background-color: rgba(0, 0, 0, 0.315);
-  // border-top-right-radius: 2rem;
-  // border-bottom-right-radius: 2rem;
-  left: 0;
-  transition: 1s;
-
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.315);
+    // border-top-right-radius: 2rem;
+    // border-bottom-right-radius: 2rem;
+    left: 0;
+    transition: 1s;
   }
-
 }
 .home-bg {
   position: absolute;
   top: 9rem;
+  left: 0;
   font-size: 30rem;
-  z-index: -1;
+  // z-index: -1;
   color: rgba(65, 65, 65, 0.186);
 }
 
-@keyframes homeGreetings{
-    0%{
-        // transform: none;
-        opacity: 0;
-    }
-    50%{
-        // transform: scale(1.1);
-        opacity: 0.5;
-    }
-    //  75%{
-    //     // transform: scale(1.1);
-    //     opacity: 0.8;
-    // }
-     100%{
-        // transform: scale(1.1);
-        opacity: 1;
-    }
+@keyframes homeGreetings {
+  0% {
+    // transform: none;
+    opacity: 0;
+  }
+  50% {
+    // transform: scale(1.1);
+    opacity: 0.5;
+  }
+  //  75%{
+  //     // transform: scale(1.1);
+  //     opacity: 0.8;
+  // }
+  100% {
+    // transform: scale(1.1);
+    opacity: 1;
+  }
 }
-@keyframes homeName{
-    0%{
-        transform: scale(0.8);
-        opacity: 0;
-    }
-    50%{
-        transform: scale(1.02);
-        opacity: 0.5;
-    }
-     75%{
-        transform: scale(1);
-        opacity: 0.8;
-    } 100%{
-        transform: scale(1);
-        opacity: 1;
-    }
+@keyframes homeName {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+    color: $all-primary-text-color;
+  }
+  50% {
+    transform: scale(1.02);
+    opacity: 1;
+    color: $dark-buttons-color;
+  }
 }
