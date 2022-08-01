@@ -19,7 +19,7 @@
   }
 
   @media screen and (max-width: 700px) {
-    background-color: $dark-sidebar-bg-color;
+    background-color: #ffffff;
     padding: 0.8rem;
     top: 0;
     justify-content: space-between;
@@ -33,7 +33,7 @@
 }
 
 .sidebar-page-container {
-  background-color: $dark-sidebar-bg-color;
+  background-color: #ffffff;
   width: 40rem;
   height: 5rem;
   color: $all-primary-text-color;
@@ -58,13 +58,12 @@
 .sidebar-logo {
   width: 9rem;
   margin-left: 0rem;
-  color: white;
   font-size: 1.5rem;
   font-family: "Righteous", cursive;
   text-align: center;
 
-  color: $dark-buttons-color;
-  border: 1px solid $dark-buttons-color;
+  color: $dark-sidebar-bg-color;
+  border: 1px solid $dark-sidebar-bg-color;
   padding: 0.4rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
@@ -88,7 +87,7 @@
 }
 .sidebar-icon {
   font-size: 1.3rem;
-  color: white;
+  color: $all-bg-color;
   &:hover {
     color: $dark-buttons-color;
   }
@@ -147,15 +146,16 @@
   }
 }
 .resume {
-  border: 1px solid white;
+  border: 1px solid $dark-sidebar-bg-color;
+  background-color: $all-bg-color;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  color: white;
+  color: $other-colors;
   font-size: 0.8rem;
   border-radius: 0.3rem;
   cursor: pointer;
   &:hover {
-    color: $dark-buttons-color;
+    color: #ffffff;
     background-color: $all-bg-color;
     transform: scale(1.02);
     transition: 1s;
@@ -170,7 +170,7 @@
 .mobile-menu-icon {
   z-index: 999;
   font-size: 1.7rem;
-  color: white;
+  color: $dark-sidebar-bg-color;
   position: fixed;
   top: 1rem;
   right: 1rem;
@@ -194,13 +194,13 @@
   gap: 2rem;
   top: 0;
   right: 0;
-  background-color: #0a192f;
+  background-color: #ffffff;
   border-bottom-left-radius: 2rem;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
   color: $all-primary-text-color;
   // opacity: 96%;
-  height: 80vh;
+  height: 100vh;
   // width: 60%;
   padding: 2rem;
   z-index: 9;
@@ -231,23 +231,24 @@
     &:active {
       border-bottom: 1px solid $all-primary-text-color;
       width: 70%;
-      color: $dark-buttons-color;
+      color: black;
       transform: scale(1.09);
       transition: 0.6s;
     }
   }
 }
 .mobile-resume {
-  border: 1px solid white;
+  border: 1px solid $dark-sidebar-bg-color;
   text-decoration: none;
-  padding: 0.5rem 7rem;
+  padding: 0.5rem 5rem;
 
-  color: white;
+  color: $all-bg-color;
   font-size: 1rem;
   border-radius: 0.3rem;
+  margin-top: 5rem;
   cursor: pointer;
   &:hover {
-    color: $dark-buttons-color;
+    color: #ffffff;
     background-color: $all-bg-color;
     transform: scale(1.02);
     transition: 1s;

@@ -91,17 +91,17 @@
     // border-right: 1px solid $dark-buttons-color;
     // border-bottom: 1px solid $dark-buttons-color;
     margin: 0;
-    padding: 0.5rem;
+    padding: 0rem;
     animation: aboutimage;
     animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     align-self: center;
-    border-radius: 40% 60% 73% 28% / 32% 41% 37% 50% ;
+    // border-radius: 40% 60% 73% 28% / 32% 41% 37% 50%;
     &:hover {
       transform: scale(1.5);
       transition: 1s;
-     
+
       filter: grayscale(0);
     }
     @media screen and (max-width: 700px) {
@@ -126,7 +126,7 @@
   }
 }
 .about-description {
-  color: $dark-secondary-text-color;
+  color: $dark-sidebar-bg-color;
   margin-top: 20px;
   margin-bottom: 7rem;
   font-size: 1rem;
@@ -136,7 +136,7 @@
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
-  em{
+  em {
     font-weight: 900;
     letter-spacing: 1px;
     color: $dark-buttons-color;
@@ -144,40 +144,34 @@
   @media screen and (max-width: 700px) {
     font-size: 0.9rem;
     width: 95%;
-     margin-bottom: 0rem;
-
+    margin-bottom: 0rem;
   }
   @media screen and (min-width: 700px) {
     font-size: 0.9rem;
     width: 60%;
-     margin-bottom: 1rem;
-
+    margin-bottom: 1rem;
   }
   @media screen and (min-width: 1200px) {
     width: 60%;
     font-size: 1rem;
-     margin-bottom: 6rem;
-
-
+    margin-bottom: 6rem;
   }
   @media screen and (min-width: 1400px) {
     width: 58%;
     font-size: 1rem;
-     margin-bottom: 7rem;
-
+    margin-bottom: 7rem;
   }
 }
 .about-bg {
-  font-size: 26rem;
   position: fixed;
-  left: 3rem;
   top: 9rem;
+  left: 0;
+  font-size: 32rem;
+  // z-index: -1;
+  color: #ffffff8b;
   z-index: -1;
-  color: rgba(65, 65, 65, 0.186);
-  animation: aboutDescription;
-  animation-duration: 2s;
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-in-out;
+  animation-name: homeGreetings;
+  animation-duration: 4s;
   @media screen and (max-width: 700px) {
     visibility: hidden;
   }
@@ -198,9 +192,10 @@
 .about-button-one {
   text-decoration: none;
   @include flex(row, center, flex-start);
-  background-color: transparent;
-  border: 1px solid $dark-buttons-color;
-  color: white;
+  background-color: $dark-sidebar-bg-color;
+
+  border: 1px solid $all-bg-color;
+  color: $other-colors;
   width: 10rem;
   padding: 1rem 2rem;
   gap: 1rem;
@@ -216,8 +211,8 @@
   cursor: pointer;
   text-transform: capitalize;
   &:hover {
-    // background-color: black;
-    color: $dark-buttons-color;
+    color: #ffffff;
+    background-color: $all-primary-text-color;
     transition: 1s;
     transform: scale(1.03);
   }
@@ -236,10 +231,6 @@
   @media screen and (min-width: 1400px) {
     margin-top: -5rem;
   }
-}
-
-.loader{
-  margin-top: 20%;
 }
 
 @keyframes aboutHeader {
@@ -267,7 +258,7 @@
     opacity: 0.6;
   }
   to {
-   opacity: 1;
+    opacity: 1;
   }
 }
 @keyframes aboutimage {
@@ -284,7 +275,6 @@
     margin-left: 10rem;
   }
   to {
-        margin-left: 0rem;
-
+    margin-left: 0rem;
   }
 }

@@ -26,7 +26,7 @@
   }
 }
 .projects-header {
-  color: $all-primary-text-color;
+  color: $all-bg-color;
   font-family: "Righteous", cursive;
 
   font-size: 4rem;
@@ -59,7 +59,7 @@
   animation-fill-mode: forwards;
 }
 .projects-page-description {
-  color: $dark-secondary-text-color;
+  color: $all-bg-color;
   padding-top: 20px;
   line-height: 1.5rem;
   word-spacing: 0.1rem;
@@ -140,10 +140,6 @@
   &:hover {
     margin-top: -1rem;
     transition: 1s;
-    h2 {
-      color: $all-primary-text-color;
-      transition: 1s;
-    }
   }
   @media (max-width: 700px) {
     width: 17rem;
@@ -165,6 +161,7 @@
   font-family: "Righteous", cursive;
   letter-spacing: 1px;
   font-size: 2rem;
+  color: #ffffff;
   font-weight: map-get($font-weights, bold);
   @media (max-width: 700px) {
     font-size: 1.5rem;
@@ -202,7 +199,7 @@
   }
 }
 .project-description {
-  color: $all-primary-text-color;
+  color: $other-colors;
   width: 100%;
   line-height: 1.2rem;
   font-weight: 100;
@@ -244,7 +241,7 @@
   }
 }
 .project-techs {
-  color: $all-primary-text-color;
+  color: #ffffff;
   @media (max-width: 700px) {
     font-size: 0.66rem;
   }
@@ -273,7 +270,7 @@
   gap: 1rem;
 }
 .project-links {
-  color: $other-colors;
+  color: #ffffff;
   font-size: 1.4rem;
   text-decoration: none;
   align-self: flex-end;
@@ -299,8 +296,8 @@
   }
 }
 .quick-view {
-  border: 1px solid $all-primary-text-color;
-  color: $all-primary-text-color;
+  border: 1px solid #ffffff;
+  color: #ffffff;
   text-decoration: none;
   padding: 5px 15px;
   border-radius: 5px;

@@ -45,8 +45,10 @@
   left: 0;
   font-size: 32rem;
   // z-index: -1;
-  color: rgba(65, 65, 65, 0.111);
+  color: #ffffff8b;
   z-index: -1;
+  animation-name: homeGreetings;
+  animation-duration: 4s;
   @media screen and (max-width: 700px) {
     visibility: hidden;
   }
@@ -74,9 +76,9 @@
 .home-original-intro-greeting {
   font-size: 3rem;
   font-weight: map-get($font-weights, bold);
-  color: $dark-secondary-text-color;
+  color: $dark-sidebar-bg-color;
   animation-name: homeGreetings;
-  animation-duration: 4s;
+  animation-duration: 2s;
   //   animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
   @media screen and (max-width: 700px) {
@@ -98,7 +100,7 @@
 
   font-weight: map-get($font-weights, bold);
   animation-name: homeName;
-  animation-duration: 6s;
+  animation-duration: 2s;
   // animation-iteration-count: infinite;
   animation-timing-function: ease-out;
   // animation-fill-mode: forwards;
@@ -123,10 +125,10 @@
 }
 .home-original-profission-intro {
   // font-size: 4rem;
-  color: $dark-secondary-text-color;
+  color: $dark-sidebar-bg-color;
   font-weight: map-get($font-weights, bold);
   animation-name: homeGreetings;
-  animation-duration: 4s;
+  animation-duration: 2s;
   //   animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
   margin-bottom: 1rem;
@@ -154,7 +156,7 @@
   width: 60%;
   margin-top: 1rem;
 
-  color: $dark-secondary-text-color;
+  color: $all-primary-text-color;
   font-weight: map-get($font-weights, regular);
   // letter-spacing: 1.5px;
   //  background:linear-gradient(0deg, #0a192f5d, #020c1b48);
@@ -186,26 +188,30 @@
   @include flex(row, flex-start, flex-start);
   margin-top: 2rem;
   gap: 2rem;
+  
 }
 .home-original-button-one {
-  border: none;
-  background-color: $dark-buttons-color;
-  color: $all-bg-color;
+  background-color: $dark-sidebar-bg-color;
+  color: $other-colors;
   font-family: "Righteous", cursive;
 
   padding: 0.5rem 2rem;
   font-size: 1rem;
   font-weight: map-get($font-weights, bold);
-  border: 1px solid $dark-buttons-color;
+  border: 1px solid $dark-sidebar-bg-color;
   // font-family: "Poppins", sans-serif;
   font-weight: map-get($font-weights, regular);
   border-radius: 0.5rem;
 
   cursor: pointer;
+  animation-name: homeName;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in-out;
   &:hover {
     background-color: $all-primary-text-color;
     border: 1px solid $all-primary-text-color;
-    color: darken($all-primary-text-color, 100%);
+    color: white;
     transform: scale(1.08);
     transition: 0.8s;
   }
@@ -230,7 +236,6 @@
 .home-original-button-two {
   @extend .home-original-button-one;
   color: $all-primary-text-color;
-  color: $dark-buttons-color;
   background-color: transparent;
   text-decoration: none;
 }
@@ -257,11 +262,9 @@
   0% {
     opacity: 0;
     transform: scale(1);
-    color: $all-primary-text-color;
   }
   50% {
     transform: scale(1.02);
     opacity: 1;
-    color: $dark-buttons-color;
   }
 }

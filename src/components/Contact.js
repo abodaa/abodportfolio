@@ -5,7 +5,6 @@ import emailjs from "@emailjs/browser";
 import { useSpring, animated } from "react-spring";
 import HashLoader from "react-spinners/HashLoader";
 
-
 export default function Contact() {
   const form = React.useRef();
   const sendEmail = (e) => {
@@ -65,11 +64,20 @@ export default function Contact() {
       <div className="contact-header-description">
         <animated.div style={style}>
           <h1 className="contact-header">Got a problem to solve?</h1>
-          <p className="contact-description">
+          <h2 className="contact-description">
             I’m interested in freelance opportunities – especially ambitious or
             large projects. However, if you have other request or question,
-            don’t hesitate to use the form.
-          </p>
+            don’t hesitate to use the form or DM me.
+          </h2>
+          <div className="email-phone">
+            <p>
+              Call me on : <em>(+251)92 233 8477</em>
+            </p>
+
+            <p>
+              Email : <em>abrahambogale747@gmail.com</em>
+            </p>
+          </div>
         </animated.div>
       </div>
       <form onSubmit={sendEmail} ref={form}>

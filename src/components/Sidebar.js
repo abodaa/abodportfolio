@@ -12,18 +12,11 @@ import { TiHomeOutline } from "react-icons/ti";
 import { BsSun } from "react-icons/bs";
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-
 import { useSpring, animated } from "react-spring";
 
 import { NavLink } from "react-router-dom";
 export default function Sidebar() {
-  const [show, setShow] = React.useState(false);
-
-
- 
-
-
-
+  var [show, setShow] = React.useState(false);
 
   // function toggle() {
   //   setShow((prevState) => !prevState);
@@ -34,7 +27,9 @@ export default function Sidebar() {
     <>
       <div className="sidebar-page-container-main">
         {/* <img src={logo} alt="" className="sidebar-logo" /> */}
-        <a className="sidebar-logo" href="/">Abraham B.</a>
+        <a className="sidebar-logo" href="/">
+          Abraham B.
+        </a>
 
         <div className="sidebar-page-container">
           <div className="sidebar-menu-items">
@@ -78,15 +73,16 @@ export default function Sidebar() {
               <RiContactsFill className="sidebar-icon" />
             </NavLink>
 
-            <a href="#" target="blank" className="resume">
+            <a
+              href="https://drive.google.com/file/d/1dTm9fO6Q_pEc7jIOMGok9tcpda69ITzS/view?usp=sharing"
+              target="blank"
+              className="resume"
+            >
               Resume
             </a>
           </div>
         </div>
-       
       </div>
-     
-     
     </>
   );
 }

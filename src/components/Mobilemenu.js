@@ -17,7 +17,7 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { useTransition, animated } from "react-spring";
 
 export default function Mobilemenu() {
-  const [show, setShow] = React.useState(false);
+  var [show, setShow] = React.useState(false);
 
   const transitions = useTransition(show, {
     from: { x: 100, y: 0, opacity: 0 },

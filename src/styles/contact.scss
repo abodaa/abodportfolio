@@ -2,8 +2,6 @@
 @import "./variables";
 
 .contact-page-container {
-  color: $all-primary-text-color;
-  // width: 100%;
   @include flex(column, flex-start, center);
 
   @media screen and (max-width: 700px) {
@@ -17,14 +15,38 @@
   }
   @media screen and (min-width: 1200px) {
     margin-top: 15rem;
+    margin-bottom: 5rem;
     margin-left: 13rem;
   }
 
   @media screen and (min-width: 1400px) {
     margin-top: 11rem;
     margin-left: 20rem;
+    margin-bottom: 5rem;
   }
   .contact-header-description {
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+
+    p {
+      font-size: 1.2rem;
+      color: $dark-buttons-color;
+
+      @media screen and (max-width: 700px) {
+        font-size: 0.9rem;
+      }
+      @media screen and (min-width: 700px) {
+      }
+      @media screen and (min-width: 1200px) {
+      }
+      @media screen and (min-width: 1400px) {
+      }
+      em {
+        font-weight: 900;
+        color: $all-primary-text-color;
+      }
+    }
+
     @media screen and (max-width: 700px) {
       @include flex(column, flex-start, center);
     }
@@ -37,6 +59,11 @@
     @media screen and (min-width: 1400px) {
       @include flex(column, flex-start, center);
     }
+  }
+  .email-phone {
+    @include flex(row, flex-start, flex-start);
+    gap: 1rem;
+    flex-wrap: wrap;
   }
   .form-fields-container {
     @include flex(column, flex-start, center);
@@ -86,7 +113,7 @@
     width: 60%;
     font-size: 1rem;
     margin-bottom: 1rem;
-    color: $other-colors;
+    color: $all-primary-text-color;
     @media screen and (max-width: 700px) {
       width: 95%;
       font-size: 0.8rem;
@@ -106,10 +133,12 @@
       width: 20rem;
       height: 3rem;
       padding: 0 1rem;
-      border: 1px solid $dark-buttons-color;
-      background-color: $dark-sidebar-bg-color;
+      border: none;
+      // border: 1px solid $all-primary-text-color;
+      background-color: #ffffff;
       color: $all-primary-text-color;
       border-radius: 0.5rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 
       &:focus {
         outline: none !important;
@@ -141,10 +170,12 @@
       height: 10rem;
       padding: 1rem;
       font-family: "Roboto", sans-serif;
-      border: 1px solid $dark-buttons-color;
-      background-color: $dark-sidebar-bg-color;
+      background-color: #ffffff;
+      border: none;
       color: $all-primary-text-color;
       border-radius: 0.5rem;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      resize: vertical;
       &:focus {
         outline: none !important;
       }
@@ -176,9 +207,9 @@
   width: 15rem;
   height: 3rem;
   padding: 0 1rem;
-  border: 1px solid $dark-buttons-color;
+  border: none;
   background-color: $dark-sidebar-bg-color;
-  color: $all-primary-text-color;
+  color: $other-colors;
   border-radius: 0.5rem;
   @media screen and (max-width: 700px) {
     width: 20rem;
@@ -188,5 +219,10 @@
   @media screen and (min-width: 1200px) {
   }
   @media screen and (min-width: 1400px) {
+  }
+  &:hover {
+    background-color: $all-bg-color;
+    color: #ffffff;
+    transition: 1s;
   }
 }

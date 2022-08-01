@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import Sidebar from "./Sidebar";
 import "../styles/about.scss";
-import me from "../images/me4.jfif";
+import me from "../images/me.png";
 import { NavLink } from "react-router-dom";
 import HashLoader from "react-spinners/HashLoader";
 import {
@@ -53,7 +53,11 @@ export default function About() {
         <img src={me} alt="mypic" />
       </div>
       <div className="about-buttons">
-        <a href="#" target="blank" className="about-button-one">
+        <a
+          href="https://drive.google.com/file/d/1dTm9fO6Q_pEc7jIOMGok9tcpda69ITzS/view?usp=sharing"
+          target="blank"
+          className="about-button-one"
+        >
           <BsDownload style={{ color: "white" }} />
           download my CV
         </a>

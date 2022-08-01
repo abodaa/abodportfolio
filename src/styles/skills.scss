@@ -91,7 +91,7 @@
 }
 
 .skills-description {
-  color: $dark-secondary-text-color;
+  color: $all-primary-text-color;
   
   margin-top: 20px;
   line-height: 1.5rem;
@@ -254,6 +254,7 @@
   font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: 100;
+  color: white;
 }
 .experience-one-subtitle {
   // font-family: sans-serif;
@@ -271,16 +272,15 @@
  
 }
 .skills-bg {
-  font-size: 30rem;
   position: fixed;
-  left: 0rem;
-  top: 12rem;
+  top: 9rem;
+  left: 0;
+  font-size: 32rem;
+  // z-index: -1;
+  color: #ffffff8b;
   z-index: -1;
-  color: rgba(65, 65, 65, 0.186);
-  animation: aboutDescription;
-  animation-duration: 3s;
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-in-out;
+  animation-name: homeGreetings;
+  animation-duration: 4s;
   @media screen and (max-width: 700px) {
     visibility: hidden;
   }
