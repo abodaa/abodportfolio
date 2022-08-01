@@ -24,7 +24,7 @@ export default function About() {
     <HashLoader
       className="loader"
       size={150}
-      color={"#ffffff"}
+      color={"#0a192f"}
       loading={loading}
     />
   ) : (
