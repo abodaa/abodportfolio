@@ -22,7 +22,7 @@ export default function Mobilemenu() {
   const transitions = useTransition(show, {
     from: { x: 100, y: 0, opacity: 0 },
     enter: { x: 0, y: 0, opacity: 1 },
-    leave: { x: 100, y: -100, opacity: 0 },
+    leave: { x: 100, y: 0, opacity: 0 },
     // reverse: show,
     // delay: 200,
     // onRest: () => set(!show),
@@ -53,9 +53,7 @@ export default function Mobilemenu() {
                   to="/"
                   className="mobile-menu"
                 >
-                  <TiHomeOutline
-                    className="sidebar-icon"
-                  />
+                  <TiHomeOutline className="sidebar-icon" />
                   <p>Home</p>
                 </NavLink>
                 <NavLink
@@ -63,9 +61,7 @@ export default function Mobilemenu() {
                   to="/About"
                   className="mobile-menu"
                 >
-                  <BsInfoSquare
-                    className="sidebar-icon"
-                  />
+                  <BsInfoSquare className="sidebar-icon" />
                   <p>About Me</p>
                 </NavLink>
                 <NavLink
@@ -73,9 +69,7 @@ export default function Mobilemenu() {
                   to="/Skills"
                   className="mobile-menu"
                 >
-                  <GiSkills
-                    className="sidebar-icon"
-                  />
+                  <GiSkills className="sidebar-icon" />
                   <p>Skills</p>
                 </NavLink>
                 <NavLink
@@ -83,9 +77,7 @@ export default function Mobilemenu() {
                   to="/Projects"
                   className="mobile-menu"
                 >
-                  <FiGrid
-                    className="sidebar-icon"
-                  />
+                  <FiGrid className="sidebar-icon" />
                   <p>Projects</p>
                 </NavLink>
                 <NavLink
@@ -93,12 +85,14 @@ export default function Mobilemenu() {
                   to="/Contact"
                   className="mobile-menu"
                 >
-                  <RiContactsFill
-                    className="sidebar-icon"
-                  />
+                  <RiContactsFill className="sidebar-icon" />
                   <p>Contact Me</p>
                 </NavLink>
-                <a href="#" target="blank" className="mobile-resume">
+                <a
+                  href="https://drive.google.com/file/d/1dTm9fO6Q_pEc7jIOMGok9tcpda69ITzS/view"
+                  target="blank"
+                  className="mobile-resume"
+                >
                   Resume
                 </a>
               </div>

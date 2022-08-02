@@ -63,11 +63,11 @@ export default function Contact() {
     <div className="contact-page-container">
       <div className="contact-header-description">
         <animated.div style={style}>
-          <h1 className="contact-header">Got a problem to solve?</h1>
+          <h1 className="contact-header">I'd love to hear from YOU.</h1>
           <h2 className="contact-description">
-            I’m interested in freelance opportunities – especially ambitious or
-            large projects. However, if you have other request or question,
-            don’t hesitate to use the form or DM me.
+            I’m interested in any opportunities – especially ambitious or large
+            projects. However, if you have any request or question, don’t
+            hesitate to use the form or DM me.
           </h2>
           <div className="email-phone">
             <p>

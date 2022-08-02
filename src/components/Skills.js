@@ -92,9 +92,9 @@ export default function Skills() {
               <p className="experience-one-subtitle"> Addis Ababa, Ethiopia</p>
               <p className="experience-one-subtitle">July 2018 - May 2022</p>
               <p className="experience-one-description">
-                Designing and developing web using latest web development tools
-                and technologies. Mainly using CMS I have developed my skills to
-                become a professional frontend developer.
+                Web Development with popular open-source CMS like (Wordpress,
+                Joomla), React JS, HTML, CSS, JS, and other tools. Website
+                Hosting and management
               </p>
             </div>
           </div>
