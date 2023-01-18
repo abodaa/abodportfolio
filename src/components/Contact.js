@@ -65,9 +65,9 @@ export default function Contact() {
         <animated.div style={style}>
           <h1 className="contact-header">I'd love to hear from YOU.</h1>
           <h2 className="contact-description">
-            I’m interested in any opportunities – especially ambitious or large
-            projects. However, if you have any request or question, don’t
-            hesitate to use the form or DM me.
+            Any opportunity, especially one involving ambitious or sizable
+            tasks, is appealing to me. Please utilize the form or DM me if you
+            have any requests or questions.
           </h2>
           <div className="email-phone">
             <p>

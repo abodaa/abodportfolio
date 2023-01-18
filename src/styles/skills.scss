@@ -4,6 +4,7 @@
 .skills-page-container {
   color: $all-primary-text-color;
   // width: 100%;
+  padding-bottom: 5rem;
   @include flex(column, flex-start, center);
 
   @media screen and (max-width: 700px) {
@@ -138,7 +139,7 @@
   border-bottom: 7px solid $dark-buttons-color;
   //   width: 20rem;
   animation: skillsBarOne;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -146,7 +147,7 @@
   border-bottom: 7px solid rgb(162, 255, 0);
   //   width: 20rem;
   animation: skillsBarTwo;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -154,7 +155,7 @@
   border-bottom: 7px solid $all-primary-text-color;
   //   width: 20rem;
   animation: skillsBarThree;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -162,7 +163,7 @@
   border-bottom: 7px solid rgb(255, 0, 93);
   //   width: 20rem;
   animation: skillsBarFour;
-  animation-duration: 3s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -170,7 +171,23 @@
   border-bottom: 7px solid rgb(79, 1, 249);
   //   width: 20rem;
   animation: skillsBarFive;
-  animation-duration: 3s;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.skills-bar-six{
+  border-bottom: 7px solid rgb(249, 254, 0);
+  //   width: 20rem;
+  animation: skillsBarFive;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+.skills-bar-seven{
+   border-bottom: 7px solid rgb(138, 138, 129);
+  //   width: 20rem;
+  animation: skillsBarseven;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
 }
@@ -215,7 +232,7 @@
 
   gap: 0.7rem;
   width: 16rem;
-  height: 13rem;
+  height: 35vh;
   padding: 2rem 1rem;
   border-radius: 1rem;
   animation: aboutDescription;
@@ -233,35 +250,45 @@
   @media (max-width: 700px) {
     gap: 0.7rem;
     width: 17rem;
-    height: 12rem;
+     height: 50vh;
+
     padding: 2rem;
   }
   @media (min-width: 700px) {
+    height: 50vh;
   }
   @media (min-width: 1200px) {
     gap: 0.7rem;
     width: 17em;
+    height: 50vh;
     padding: 1rem;
   }
   @media (min-width: 1400px) {
     gap: 0.7rem;
     width: 18rem;
+  height: 45vh;
+
     padding: 2rem;
   }
 }
 .experience-one-title{
-  font-family: "Righteous", cursive;
+  // font-family: "Righteous", cursive;
   font-size: 1.4rem;
   letter-spacing: 1px;
   font-weight: 100;
   color: white;
+}
+.experience-one-time{
+  @extend .experience-one-title;
+  font-size: 13px;
+
 }
 .experience-one-subtitle {
   // font-family: sans-serif;
 
   color: $dark-secondary-text-color;
   // font-weight: map-get($font-weights, regular);
-  font-size: 16px;
+  font-size: 13px;
   line-height: 18px;
 }
 .experience-one-description{
@@ -364,5 +391,13 @@
   }
   to {
     width: 20rem;
+  }
+}
+@keyframes skillsBarseven {
+  from {
+    width: 0;
+  }
+  to {
+    width: 15rem;
   }
 }

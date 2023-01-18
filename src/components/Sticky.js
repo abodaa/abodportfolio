@@ -11,9 +11,9 @@ export default function Sticky() {
   return (
     <>
       <div className="sticky-social-icons">
-        <a target="blank" href="https://www.facebook.com/creativeabod">
+        {/* <a target="blank" href="https://www.facebook.com/creativeabod">
           <RiFacebookCircleLine className="social-icons" />
-        </a>
+        </a> */}
         <a target="blank" href="https://t.me/BigAbod">
           <TbBrandTelegram className="social-icons" />
         </a>

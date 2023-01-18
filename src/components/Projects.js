@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 // import Sidebar from "./Sidebar";
 import "../styles/projects.scss";
-import projectOne from "../images/project1.PNG";
+import projectOne from "../images/Proj.png";
 import { BiLinkExternal } from "react-icons/bi";
 import { FiGithub } from "react-icons/fi";
 import { BsArrowRightCircle, BsArrowLeftCircle } from "react-icons/bs";
@@ -33,9 +33,9 @@ export default function Project() {
       <h1 className="projects-header">some things I've built</h1>
       <div className="projects-header-devider"></div>
       <p className="projects-page-description">
-        Here are a few past development projects I've worked on. Want to see
-        more? I am working on some cool projects and this page will be filled
-        with all my latest and awesome project portfolios
+        I've worked on the following development project in the past. Wish to
+        see more? I'm working on some excellent projects, and this page will
+        feature all of my most recent and fantastic project portfolios.
       </p>
 
       <div className="projects-container">
@@ -53,22 +53,22 @@ export default function Project() {
               <h3 className="project-subtitle">A Movie Streaming Website</h3>
             </div>
             <p className="project-description">
-              Fully functional Movie streaming website built with React, TMDB
-              API and a third party movie streaming provider server
+              Fully operational movie streaming website created using React, the
+              TMDB API, and a server from a different movie streaming service
+              provider
             </p>
             <div className="techs">
               <p href="#" className="project-techs">
-                React
+                ReactJs
+              </p>
+
+              <p href="#" className="project-techs">
+                Vanilla CSS
               </p>
               <p href="#" className="project-techs">
                 TMDB API
               </p>
-              <p href="#" className="project-techs">
-                CSS
-              </p>
-              <p href="#" className="project-techs">
-                Vanilla JS
-              </p>
+
               <a href="#" className="project-links">
                 <a
                   href="https://lekuluent.com"
@@ -97,49 +97,11 @@ export default function Project() {
             </div>
           </div>
         </div>
-        <div className="project-one">
-          {/* <iframe
-            className="project-iframe"
-            src="https://abresh-movies.netlify.app/"
-            frameborder="0"
-          ></iframe> */}
-          {/* <img src={projectOne} className="project-img" /> */}
-          <div className="project-description-container">
-            <div>
-              <p className="featured">Featured Project</p>
-              <h2 className="project-title">Coming Soon</h2>
-              <h3 className="project-subtitle">On Going Project</h3>
-            </div>
-            <p className="project-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quod
-              architecto facilis! Ratione dolor.
-            </p>
-            <div className="techs">
-              <p href="#" className="project-techs">
-                React
-              </p>
-              <p href="#" className="project-techs">
-                API
-              </p>
-              <p href="#" className="project-techs">
-                SASS
-              </p>
-              <p href="#" className="project-techs">
-                Vanilla JS
-              </p>
-              <a href="#" className="project-links">
-                <p className="quick-view">Quick View</p>
-              </a>
-            </div>
-            <div className="links">
-              <a href="#" className="project-links">
-                <BiLinkExternal style={{ textDecoration: "none" }} />
-              </a>
-              <a href="#" target="blank" className="project-links">
-                <FiGithub />
-              </a>
-            </div>
-          </div>
+
+        <div className="project-image-container">
+          <a target= "blank" href="https://lekuluent.com">
+            <img src={projectOne} className="project-img" />
+          </a>
         </div>
       </div>
     </div>

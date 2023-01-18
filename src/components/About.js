@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import Sidebar from "./Sidebar";
 import "../styles/about.scss";
-import me from "../images/me.png";
+import me from "../images/profile.png";
 import { NavLink } from "react-router-dom";
 import HashLoader from "react-spinners/HashLoader";
 import {
@@ -36,19 +36,20 @@ export default function About() {
       </>
       <div className="about-description-image">
         <p className="about-description">
-          Hello! My name is <em>ABRAHAM</em> and I enjoy creating things that
-          live on the internet. My interest in web development started back in
-          2018 when I decided to build a simple website using Wordpress for an
-          imaginary company. I was working as a freelance Web Developer for the
-          past few years, building and Designing websites for some clients. My
-          main tools for web development back then were popular open-source CMS
-          like (WordPress, Drupal, Magento, Keystone.js and others). Lately I
-          decided to become a Full Stack Web Developer and started the journey
-          exploring about the full stack Web Developement technologies and
-          trends,so I started learning the most relevant and valuable subjects.
-          I believe participating on any related projects will make me a good
-          contributor to the overall project's success as I am a fast learner on
-          the other hands benefits myself to learn from it.
+          Hello 👋... My name is ABRAHAM, and I like making things that are
+          accessible online. In 2018, I first became interested in web
+          development when I chose to use Wordpress to create a straightforward
+          website for a fictional business. For the past few years, I have
+          worked as a freelance web developer, creating and designing websites
+          for various clients. Back then, well-known open-source content
+          management systems (CMS) such (WordPress, Drupal, Magento, and others)
+          were my tools. Recently, I made the decision to pursue a career as a
+          full stack web developer. I set out to learn about the latest full
+          stack web development trends and technologies, so I began studying the
+          courses that would be most useful to me. Since I am a quick learner, I
+          think that taking part in any relevant projects will make me a
+          valuable contributor to the success of the project. On the other hand,
+          I will profit personally by learning from it.
         </p>
         <img src={me} alt="mypic" />
       </div>

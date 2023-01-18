@@ -48,12 +48,12 @@ export default function Homeoriginal() {
 
       {/* <div> */}
       <p className="home-original-self-introduction">
-        A disciplined tech enthusiast who is motivated to integrate the art of
-        design with the art of programming. Having B.Sc. in Electrical and
-        Computer Engineering (Computer Engineering specialization),I have
-        considerable years of experience as a frontend web developer and
-        software tester. I am always on self-teaching process to advance my tech
-        stack and acquire more knowledge and experience.
+        I am a skilled frontend developer with experience in designing and
+        implementing visually stunning and user-friendly websites using HTML,
+        CSS, JavaScript, React, CMSs and familiar with responsive design and
+        cross-browser compatibility. I am dedicated to creating a seamless user
+        experience and am constantly updating my skills to stay current with the
+        latest trends in web development.
       </p>
 
       <div className="home-original-buttons">

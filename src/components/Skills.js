@@ -34,14 +34,17 @@ export default function Skills() {
       <div className="skills-header-devider"></div>
       <div className="skills-description-bar">
         <p className="skills-description">
-          Since beginning my journey as a freelance developer nearly 4 years
-          ago, I’ve done freelance work for people. I create successful
-          responsive websites that are fast, easy to use, and built with best
-          practices. The main area of my expertise is front-end development,
-          HTML, CSS, JS, React, building small and medium web apps, features,
-          animations, and coding interactive layouts. I also have full-stack
-          developer experience with popular open-source CMS like (WordPress,
-          Joomla and others) . Visit my{" "}
+          I’m an experienced frontend and QA engineer with a track record of
+          producing high-performing and reliable software. I am an experienced
+          coder with expertise in HTML, CSS, JavaScript, and React.
+          Additionally, my solid background in unit and manual testing provides
+          me with a good understanding of the software development life cycle
+          and the ability to quickly identify every possible issue in the
+          software. I’m also skilled at creating efficient bug reports and
+          leading teams of QA engineers to ensure all aspects of quality
+          processes are working perfectly. Overall, I’m a great asset to any
+          development team and provides a valuable resource to help ensure the
+          delivery of high-quality software. Visit my{" "}
           <a
             target="blank"
             href="https://www.linkedin.com/in/abraham-bogale?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BufZJhWL%2BREetHf9o4QQjSA%3D%3D"
@@ -69,32 +72,50 @@ export default function Skills() {
               <div className="skills-bar-four"></div>
             </div>
             <div className="skills-bar">
+              <p className="skills-bar-title">Node Js</p>
+              <div className="skills-bar-seven"></div>
+            </div>
+            <div className="skills-bar">
               <p className="skills-bar-title">CMS (Wordpress / Joomla)</p>
               <div className="skills-bar-five"></div>
+            </div>
+            <div className="skills-bar">
+              <p className="skills-bar-title">QA(Software Quality Assurance)</p>
+              <div className="skills-bar-six"></div>
             </div>
           </div>
           <div className="experience-box">
             <div className="skills-experience">
               <h3 className="experience-one-title">QA Engineer</h3>
-              <p className="experience-one-subtitle">
+              <p className="experience-one-time">
                 {" "}
                 Safaricom Telecommunications Ethiopia
               </p>
-              <p className="experience-one-subtitle">May 2022 - Now</p>
+              <p className="experience-one-time">May 2022 - Present</p>
               <p className="experience-one-subtitle">
-                Test case execution and bug reproduction, Issue tracking and
-                recording on ALM supported by brief description and screenshots,
-                Ticket follow up and status update.
+                Developing web and mobile system test cases, validating them,
+                translating them into other local languages, allocating them to
+                the testing team, executing the tests, creating and reproducing
+                defects and bugs, reporting on defect status, running sanity and
+                regression tests, assisting with UAT test plan preparation,
+                delivering daily test report to management, understanding the
+                software development life cycle, being familiar with software
+                testing methods and tools, and having effective teamwork
+                techniques.
               </p>
             </div>
             <div className="skills-experience">
               <h3 className="experience-one-title">Freelance Web Developer</h3>
-              <p className="experience-one-subtitle"> Addis Ababa, Ethiopia</p>
-              <p className="experience-one-subtitle">July 2018 - May 2022</p>
-              <p className="experience-one-description">
-                Web Development with popular open-source CMS like (Wordpress,
-                Joomla), React JS, HTML, CSS, JS, and other tools. Website
-                Hosting and management
+              <p className="experience-one-time"> Addis Ababa, Ethiopia</p>
+              <p className="experience-one-time">July 2018 - May 2022</p>
+              <p className="experience-one-subtitle">
+                Creating custom websites for clients based on their
+                specifications and requirements. Utilizing ReactJS, JavaScript,
+                HTML, and CSS to create visually appealing and user-friendly
+                websites, as well as CMS such as WordPress and Joomla for
+                maintenance. Throughout the development process, I effectively
+                communicated with my clients to make sure that they were
+                satisfied with the end product.
               </p>
             </div>
           </div>

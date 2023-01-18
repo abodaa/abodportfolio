@@ -97,6 +97,8 @@
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
     align-self: center;
+    border: 1px solid #34e0f0;
+    border-radius: 50%;
     // border-radius: 40% 60% 73% 28% / 32% 41% 37% 50%;
     &:hover {
       transform: scale(1.5);
