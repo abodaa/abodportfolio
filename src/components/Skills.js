@@ -1,7 +1,6 @@
 import React, { PureComponent } from "react";
 import Sidebar from "./Sidebar";
 import "../styles/skills.scss";
-import me from "../images/me3.png";
 import {
   BsDownload,
   BsArrowRightCircle,

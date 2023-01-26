@@ -74,7 +74,7 @@ export default function Sidebar() {
             </NavLink>
 
             <a
-              href="https://drive.google.com/file/d/1NREIzprBb4Gbd2t11n9fJHWUL8r5lL05/view?usp=sharing"
+              href="https://drive.google.com/file/d/1jsxOABOtxseBwsOQxQvxu0eQ74WXHXlO/view?usp=sharing"
               target="blank"
               className="resume"
             >
