@@ -211,6 +211,7 @@
   background-color: $dark-sidebar-bg-color;
   color: $other-colors;
   border-radius: 0.5rem;
+  transition: all 0.3s ease-in-out;
   @media screen and (max-width: 700px) {
     width: 20rem;
   }
@@ -223,6 +224,5 @@
   &:hover {
     background-color: $all-bg-color;
     color: #ffffff;
-    transition: 1s;
   }
 }

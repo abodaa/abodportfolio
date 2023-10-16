@@ -28,7 +28,6 @@
 .about-header {
   color: $all-primary-text-color;
   font-family: "Righteous", cursive;
-
   font-size: 6rem;
   font-weight: map-get($font-weights, bold);
   text-transform: capitalize;
@@ -88,8 +87,6 @@
   }
   img {
     filter: grayscale(5);
-    // border-right: 1px solid $dark-buttons-color;
-    // border-bottom: 1px solid $dark-buttons-color;
     margin: 0;
     padding: 0rem;
     animation: aboutimage;
@@ -99,11 +96,10 @@
     align-self: center;
     border: 1px solid #34e0f0;
     border-radius: 50%;
-    // border-radius: 40% 60% 73% 28% / 32% 41% 37% 50%;
+    transition: all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.5);
       transition: 1s;
-
       filter: grayscale(0);
     }
     @media screen and (max-width: 700px) {
@@ -195,7 +191,6 @@
   text-decoration: none;
   @include flex(row, center, flex-start);
   background-color: $dark-sidebar-bg-color;
-
   border: 1px solid $all-bg-color;
   color: $other-colors;
   width: 10rem;
@@ -207,15 +202,12 @@
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in-out;
-
-  // position: absolute;
-  // top: 35rem;
   cursor: pointer;
   text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
   &:hover {
     color: #ffffff;
     background-color: $all-primary-text-color;
-    transition: 1s;
     transform: scale(1.03);
   }
   @media screen and (max-width: 700px) {

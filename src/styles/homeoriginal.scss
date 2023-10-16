@@ -44,7 +44,6 @@
   top: 9rem;
   left: 0;
   font-size: 32rem;
-  // z-index: -1;
   color: #ffffff8b;
   z-index: -1;
   animation-name: homeGreetings;
@@ -79,7 +78,6 @@
   color: $dark-sidebar-bg-color;
   animation-name: homeGreetings;
   animation-duration: 2s;
-  //   animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
   @media screen and (max-width: 700px) {
     font-size: 1rem;
@@ -95,20 +93,14 @@
   }
 }
 .home-original-name-intro {
-  // font-size: 9rem;
   font-family: "Righteous", cursive;
-
   font-weight: map-get($font-weights, bold);
   animation-name: homeName;
   animation-duration: 2s;
-  // animation-iteration-count: infinite;
   animation-timing-function: ease-out;
-  // animation-fill-mode: forwards;
-
+  transition: all 1s ease-in-out;
   &:hover {
-    // transform: skew(5deg);
     color: $dark-buttons-color;
-    transition: 2s;
   }
   @media screen and (max-width: 700px) {
     font-size: 3rem;
@@ -124,12 +116,10 @@
   }
 }
 .home-original-profission-intro {
-  // font-size: 4rem;
   color: $dark-sidebar-bg-color;
   font-weight: map-get($font-weights, bold);
   animation-name: homeGreetings;
   animation-duration: 2s;
-  //   animation-iteration-count: 2;
   animation-timing-function: ease-in-out;
   margin-bottom: 1rem;
 
@@ -150,17 +140,12 @@
   }
 }
 .home-original-self-introduction {
-  // @include flex(column, flex-start, center);
   gap: 1.5rem;
   font-size: 17px;
   width: 60%;
   margin-top: 1rem;
-
   color: $all-primary-text-color;
   font-weight: map-get($font-weights, regular);
-  // letter-spacing: 1.5px;
-  //  background:linear-gradient(0deg, #0a192f5d, #020c1b48);
-  // padding: 1rem;
   word-spacing: 3px;
   line-height: 20px;
   animation: homeGreetings;
@@ -170,9 +155,6 @@
   @media screen and (max-width: 700px) {
     width: 85%;
     font-size: 15px;
-    // margin-left: 2rem;
-
-    // margin: auto;
   }
   @media screen and (min-width: 700px) {
     width: 80%;
@@ -194,26 +176,23 @@
   background-color: $dark-sidebar-bg-color;
   color: $other-colors;
   font-family: "Righteous", cursive;
-
   padding: 0.5rem 2rem;
   font-size: 1rem;
   font-weight: map-get($font-weights, bold);
   border: 1px solid $dark-sidebar-bg-color;
-  // font-family: "Poppins", sans-serif;
   font-weight: map-get($font-weights, regular);
   border-radius: 0.5rem;
-
   cursor: pointer;
   animation-name: homeName;
   animation-duration: 2s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in-out;
+  transition: all 0.3s ease-in-out;
   &:hover {
     background-color: $all-primary-text-color;
     border: 1px solid $all-primary-text-color;
     color: white;
-    transform: scale(1.08);
-    transition: 0.8s;
+    transform: scale(1.04);
   }
   @media screen and (max-width: 700px) {
     padding: 0.5rem 1rem;

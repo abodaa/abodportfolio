@@ -36,20 +36,20 @@ export default function About() {
       </>
       <div className="about-description-image">
         <p className="about-description">
-          Hello 👋... My name is ABRAHAM, and I like making things that are
-          accessible online. In 2018, I first became interested in web
-          development when I chose to use Wordpress to create a straightforward
-          website for a fictional business. For the past few years, I have
-          worked as a freelance web developer, creating and designing websites
-          for various clients. Back then, well-known open-source content
-          management systems (CMS) such (WordPress, Drupal, Magento, and others)
-          were my tools. Recently, I made the decision to pursue a career as a
-          full stack web developer. I set out to learn about the latest full
-          stack web development trends and technologies, so I began studying the
-          courses that would be most useful to me. Since I am a quick learner, I
-          think that taking part in any relevant projects will make me a
-          valuable contributor to the success of the project. On the other hand,
-          I will profit personally by learning from it.
+          Hello 👋... I'm ABRAHAM, and I enjoy creating stuff that can be found
+          online. I originally developed an interest in web development in 2018
+          when I decided to use Wordpress to build a simple website for a
+          made-up company. I've been a freelance web developer for the past few
+          years, building and designing websites for various clients. I used
+          popular open-source content management systems (CMS) at that time,
+          including WordPress, Drupal, Magento, and others. I have learned and
+          earned the exeperience working with the technologies in the
+          MERN stack: MongoDB, ExpressJs, ReactJs and NodeJs in addition to the
+          basic frontend technologies such as HTML, CSS, and JavaScript. I
+          believe that participating in any relevant projects will make me a
+          meaningful contributor to the project's success because I am a quick
+          learner. On the other side, by learning from it, I will benefit
+          personally.🙂
         </p>
         <img src={me} alt="mypic" />
       </div>

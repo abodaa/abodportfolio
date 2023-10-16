@@ -33,17 +33,14 @@ export default function Skills() {
       <div className="skills-header-devider"></div>
       <div className="skills-description-bar">
         <p className="skills-description">
-          I’m an experienced frontend and QA engineer with a track record of
-          producing high-performing and reliable software. I am an experienced
-          coder with expertise in HTML, CSS, JavaScript, and React.
-          Additionally, my solid background in unit and manual testing provides
-          me with a good understanding of the software development life cycle
-          and the ability to quickly identify every possible issue in the
-          software. I’m also skilled at creating efficient bug reports and
-          leading teams of QA engineers to ensure all aspects of quality
-          processes are working perfectly. Overall, I’m a great asset to any
-          development team and provides a valuable resource to help ensure the
-          delivery of high-quality software. Visit my{" "}
+          Web Developer with a proven track record of delivering high-performing
+          and reliable MERN applications, combined with a solid background in
+          unit and manual testing, provide a deep understanding of the software
+          development life cycle and the ability to quickly identify and resolve
+          potential issues. Skilled at creating efficient bug reports and
+          leading teams of QA engineers to ensure all quality processes are met.
+          Valuable asset to any development team, committed to delivering
+          high-quality software. Please visit my {" "}
           <a
             target="blank"
             href="https://www.linkedin.com/in/abraham-bogale?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BufZJhWL%2BREetHf9o4QQjSA%3D%3D"

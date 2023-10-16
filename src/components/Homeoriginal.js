@@ -48,12 +48,11 @@ export default function Homeoriginal() {
 
       {/* <div> */}
       <p className="home-original-self-introduction">
-        I am a skilled frontend developer with experience in designing and
-        implementing visually stunning and user-friendly websites using HTML,
-        CSS, JavaScript, React, CMSs and familiar with responsive design and
-        cross-browser compatibility. I am dedicated to creating a seamless user
-        experience and am constantly updating my skills to stay current with the
-        latest trends in web development.
+        MERN stack and frontend developer with a passion of building modern and
+        user-friendly web applications. Experienced working with the
+        technologies in the MERN stack: MongoDB, ExpressJs, ReactJs and
+        NodeJs in addition to the basic frontend technologies such as
+        HTML, CSS, and JavaScript.
       </p>
 
       <div className="home-original-buttons">
