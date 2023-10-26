@@ -85,12 +85,12 @@ export default function Skills() {
               <h3 className="experience-one-title">QA Engineer</h3>
               <p className="experience-one-time">
                 {" "}
-                Safaricom Telecommunications Ethiopia
+                Safaricom Telecommunications Ethiopia, M-PESA project
               </p>
               <p className="experience-one-time">May 2022 - Present</p>
               <div className="experience-one-subtitle">
                 <li>
-                  Leading Business Apps testing team, API testing using Postman
+                  Leading Business Apps testing team
                 </li>
                 <li>API testing using Postman</li>
                 <li>
