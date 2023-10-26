@@ -124,7 +124,7 @@ export default function Skills() {
             <div className="skills-experience">
               <h3 className="experience-one-title">Freelance Web Developer</h3>
               <p className="experience-one-time"> Addis Ababa, Ethiopia</p>
-              <p className="experience-one-time">July 2018 - May 2022</p>
+              <p className="experience-one-time">July 2018 - Present</p>
               <p className="experience-one-subtitle">
                 Creating and maintaining websites using technologies such as
                 ReactJS, NodeJS, ExpressJs, MongoDB, JavaScript, HTML, CSS, and
@@ -133,7 +133,7 @@ export default function Skills() {
                 fully functional, high performance and user-friendly web apps
                 that meet client needs.
                 <li>
-                  Worked with clients to understand their needs and develop
+                  Working with clients to understand their needs and develop
                   custom websites that met their requirements.
                 </li>
                 <li>
@@ -141,16 +141,16 @@ export default function Skills() {
                   MongoDB, ExpressJs, ReactJs and NodeJs.
                 </li>
                 <li>
-                  Worked with common frontend development tools such as Babel,
+                  Working with common frontend development tools such as Babel,
                   Webpack, NPM React.js workflows.
                 </li>
                 <li>
-                  Utilized HTML, CSS, JavaScript, ReactJS, and other front-end
+                  Utilizing HTML, CSS, JavaScript, ReactJS, and other front-end
                   technologies to create visually appealing and user-friendly
                   websites.
                 </li>
                 <li>
-                  Communicated effectively with clients throughout the
+                  Communicating effectively with clients throughout the
                   development process to ensure their satisfaction with the
                   final product
                 </li>
