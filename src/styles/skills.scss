@@ -220,7 +220,6 @@
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   gap: 0.7rem;
   width: 16rem;
-  height: 35vh;
   padding: 2rem 1rem;
   border-radius: 1rem;
   animation: aboutDescription;
@@ -230,7 +229,7 @@
   transition: all 0.3s ease-in-out;
   cursor:default;
   &:hover {
-    margin-top: -1rem;
+    transform: scale(1.05);
     .experience-one-title {
       color: $dark-buttons-color;
     }
@@ -238,25 +237,22 @@
   @media (max-width: 700px) {
     gap: 0.7rem;
     width: 17rem;
-     height: 50vh;
-
     padding: 2rem;
   }
   @media (min-width: 700px) {
-    height: 50vh;
   }
   @media (min-width: 1200px) {
     gap: 0.7rem;
     width: 17em;
-    height: 50vh;
     padding: 1rem;
   }
   @media (min-width: 1400px) {
     gap: 0.7rem;
     width: 18rem;
-  height: 45vh;
-
     padding: 2rem;
+  }
+  li{
+    margin-left: 1rem;
   }
 }
 .experience-one-title{

@@ -40,7 +40,7 @@ export default function Skills() {
           potential issues. Skilled at creating efficient bug reports and
           leading teams of QA engineers to ensure all quality processes are met.
           Valuable asset to any development team, committed to delivering
-          high-quality software. Please visit my {" "}
+          high-quality software. Please visit my{" "}
           <a
             target="blank"
             href="https://www.linkedin.com/in/abraham-bogale?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BufZJhWL%2BREetHf9o4QQjSA%3D%3D"
@@ -88,30 +88,72 @@ export default function Skills() {
                 Safaricom Telecommunications Ethiopia
               </p>
               <p className="experience-one-time">May 2022 - Present</p>
-              <p className="experience-one-subtitle">
-                Developing web and mobile system test cases, validating them,
-                translating them into other local languages, allocating them to
-                the testing team, executing the tests, creating and reproducing
-                defects and bugs, reporting on defect status, running sanity and
-                regression tests, assisting with UAT test plan preparation,
-                delivering daily test report to management, understanding the
-                software development life cycle, being familiar with software
-                testing methods and tools, and having effective teamwork
-                techniques.
-              </p>
+              <div className="experience-one-subtitle">
+                <li>
+                  Leading Business Apps testing team, API testing using Postman
+                </li>
+                <li>API testing using Postman</li>
+                <li>
+                  Developing web and mobile channels system test cases and
+                  executing them
+                </li>
+                <li>
+                  validating developed test cases against product workflow
+                  (customer journey), validating translations (Amharic and Afan
+                  Oromo)
+                </li>
+                <li>
+                  Creating defects and assigning to respective
+                  development/product team
+                </li>
+                <li>
+                  Following up on defect resolution with development/product
+                  team
+                </li>
+                <li>Reproduce bugs and report on defect status</li>{" "}
+                <li>
+                  Running Sanity, Regression, Performance, Functional and User
+                  acceptance tests on different test cycles
+                </li>{" "}
+                <li>
+                  Assist on test plan preparation and preparing and delivering
+                  daily test report for management.
+                </li>
+              </div>
             </div>
             <div className="skills-experience">
               <h3 className="experience-one-title">Freelance Web Developer</h3>
               <p className="experience-one-time"> Addis Ababa, Ethiopia</p>
               <p className="experience-one-time">July 2018 - May 2022</p>
               <p className="experience-one-subtitle">
-                Creating custom websites for clients based on their
-                specifications and requirements. Utilizing ReactJS, JavaScript,
-                HTML, and CSS to create visually appealing and user-friendly
-                websites, as well as CMS such as WordPress and Joomla for
-                maintenance. Throughout the development process, I effectively
-                communicated with my clients to make sure that they were
-                satisfied with the end product.
+                Creating and maintaining websites using technologies such as
+                ReactJS, NodeJS, ExpressJs, MongoDB, JavaScript, HTML, CSS, and
+                various content management systems. Skilled in front-end and
+                MERN stack development and able to create visually appealing
+                fully functional, high performance and user-friendly web apps
+                that meet client needs.
+                <li>
+                  Worked with clients to understand their needs and develop
+                  custom websites that met their requirements.
+                </li>
+                <li>
+                  Experienced working with the technologies in the MERN stack:
+                  MongoDB, ExpressJs, ReactJs and NodeJs.
+                </li>
+                <li>
+                  Worked with common frontend development tools such as Babel,
+                  Webpack, NPM React.js workflows.
+                </li>
+                <li>
+                  Utilized HTML, CSS, JavaScript, ReactJS, and other front-end
+                  technologies to create visually appealing and user-friendly
+                  websites.
+                </li>
+                <li>
+                  Communicated effectively with clients throughout the
+                  development process to ensure their satisfaction with the
+                  final product
+                </li>
               </p>
             </div>
           </div>
