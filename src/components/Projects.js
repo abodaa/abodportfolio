@@ -1,8 +1,9 @@
 import React, { PureComponent } from "react";
 // import Sidebar from "./Sidebar";
 import "../styles/projects.scss";
-import projectOne from "../images/Proj.png";
-import projectTwo from "../images/Proj2.png";
+import projectOne from "../images/Lekuluent.png";
+import projectTwo from "../images/Limad.png";
+import projectThree from "../images/Akkoo.png";
 
 import { BiLinkExternal } from "react-icons/bi";
 import { FiGithub } from "react-icons/fi";
@@ -56,9 +57,8 @@ export default function Project() {
               movie streaming service provider's server.
             </p>
             <div className="techs">
-              <p className="project-techs">ExpressJs</p>
-
-              <p className="project-techs">ReactJs</p>
+              <p className="project-techs">Express</p>
+              <p className="project-techs">React</p>
               <p className="project-techs">MongoDB</p>
               <p className="project-techs">CSS</p>
             </div>
@@ -104,12 +104,12 @@ export default function Project() {
             </div>
             <p className="project-description">
               A habits tracker web app built with ExpressJs, MongoDB, ReactJs,
-              and vanilla CSS. A simple full stack web app that is great to track
-              your progress and stay motivated on your habits journey.
+              and vanilla CSS. A simple full stack web app that is great to
+              track your progress and stay motivated on your habits journey.
             </p>
             <div className="techs">
-              <p className="project-techs">ExpressJs</p>
-              <p className="project-techs">ReactJs</p>
+              <p className="project-techs">Express</p>
+              <p className="project-techs">React</p>
               <p className="project-techs">MongoDB</p>
               <p className="project-techs">CSS</p>
             </div>
@@ -130,6 +130,56 @@ export default function Project() {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Project Three */}
+      <div className="projects-container">
+        <div className="project-one">
+          <div className="project-description-container">
+            <div>
+              <p className="featured">Recreated</p>
+              <h2 className="project-title">Akkoo Coffee</h2>
+              <h3 className="project-subtitle">
+                Redesign and revamp of Akkoo Coffee's website
+              </h3>
+            </div>
+            <p className="project-description">
+              AKkoo coffe is a well-known Ethiopian restaurant and coffee shop.
+              This project is simply a redesign of their existing website.
+              React, Tailwind, and Framer motion were used to create a modern UI
+              and UX. It is more akin to a restaurant landing page, with some
+              functions limited. If further features are required in the future,
+              they will be simple to add.
+            </p>
+            <div className="techs">
+              <p className="project-techs">React</p>
+              <p className="project-techs">Tailwind</p>
+              <p className="project-techs">Framer Motion</p>
+            </div>
+            <div className="links">
+              <a
+                href="https://akkoocoffee.netlify.app"
+                target="blank"
+                className="project-links"
+              >
+                <BiLinkExternal style={{ textDecoration: "none" }} />
+              </a>
+              <a
+                href="https://github.com/abodaa/akkooCoffee"
+                target="blank"
+                className="project-links"
+              >
+                <FiGithub />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="project-image-container">
+          <a target="blank" href="https://akkoocoffee.netlify.app">
+            <img src={projectThree} className="project-img" />
+          </a>
         </div>
       </div>
     </div>
