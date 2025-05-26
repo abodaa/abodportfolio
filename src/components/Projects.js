@@ -60,11 +60,11 @@ export default function Project() {
               <p className="project-techs">Express</p>
               <p className="project-techs">React</p>
               <p className="project-techs">MongoDB</p>
-              <p className="project-techs">CSS</p>
+              <p className="project-techs">Tailwind CSS</p>
             </div>
             <div className="links">
               <a
-                href="https://lekuluent.com"
+                href="https://lekulumovies.netlify.app"
                 target="blank"
                 className="project-links"
               >
@@ -82,7 +82,7 @@ export default function Project() {
         </div>
 
         <div className="project-image-container">
-          <a target="blank" href="https://lekuluent.com">
+          <a target="blank" href="https://lekulumovies.netlify.app">
             <img src={projectOne} className="project-img" />
           </a>
         </div>
