@@ -47,14 +47,12 @@ export default function Project() {
             <div>
               <p className="featured">Featured Project</p>
               <h2 className="project-title">Lekulu Entertainment</h2>
-              <h3 className="project-subtitle">A movie streaming web app</h3>
+              <h3 className="project-subtitle">A movie streaming service providers web app</h3>
             </div>
             <p className="project-description">
-              Lekuluent.com is a streaming service that provides access to a
+              Lekuluemovies is a streaming service providers list server that provides access to a
               large range of Tv-shows, Movies, Documentaries, and other contents
-              on different platforms. Fully functional movie streaming website
-              built with ReactJs, ExpressJs, MongoDB, TMDB API, and a different
-              movie streaming service provider's server.
+              on different platforms. Built with ReactJs, ExpressJs, MongoDB and TMDB API.
             </p>
             <div className="techs">
               <p className="project-techs">Express</p>
