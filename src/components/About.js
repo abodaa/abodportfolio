@@ -43,19 +43,18 @@ export default function About() {
           years, building and designing websites for various clients. I used
           popular open-source content management systems (CMS) at that time,
           including WordPress, Drupal, Magento, and others. I have learned and
-          earned the exeperience working with the technologies in the
-          MERN stack: MongoDB, ExpressJs, ReactJs and NodeJs in addition to the
-          basic frontend technologies such as HTML, CSS, and JavaScript. I
-          believe that participating in any relevant projects will make me a
-          meaningful contributor to the project's success because I am a quick
-          learner. On the other side, by learning from it, I will benefit
-          personally.🙂
+          earned the exeperience working with the technologies in the MERN
+          stack: MongoDB, ExpressJs, ReactJs and NodeJs in addition to the basic
+          frontend technologies such as HTML, CSS, and JavaScript. I believe
+          that participating in any relevant projects will make me a meaningful
+          contributor to the project's success because I am a quick learner. On
+          the other side, by learning from it, I will benefit personally.🙂
         </p>
         <img src={me} alt="mypic" />
       </div>
       <div className="about-buttons">
         <a
-          href="https://drive.google.com/file/d/1jsxOABOtxseBwsOQxQvxu0eQ74WXHXlO/view?usp=sharing"
+          href="https://drive.google.com/file/d/1AbnlKlKsdqnFIxZ1f0O89BjODuE5M22u/view?usp=sharing"
           target="blank"
           className="about-button-one"
         >
